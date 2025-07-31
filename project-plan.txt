@@ -1,0 +1,73 @@
+Dynamic Blog Website – Project Plan:
+
+Part 1: Repository Setup and Project Planning
+------------------------------------------------
+- Create repository: dynamic-blog-website
+- Add README file explaining the project
+- Clone repository to local machine
+
+- Create three main pages:
+    - Homepage
+    - Create Post
+    - View/Edit Post
+
+- Add project-plan.txt documenting the plan
+- Push initial setup to origin main
+
+Part 2: Implement Homepage Functionality
+------------------------------------------------
+Branch: feature/homepage
+
+- Add index.html
+    - Lists all blog posts (URLs)
+- Add homepage.js
+    - Loads blog data from local storage and displays it on the webpage
+    - use window.location.search to get the post URL
+- Add styles.css
+    - Minimal styling and responsive layout
+
+Part 3: Implement Create Post Functionality
+------------------------------------------------
+Branch: feature/new-post
+
+- Add new-post.html
+    - Form for entering blog post title, content, and optional image
+- Add new-post.js
+    - Saves blog post data to local storage
+    - Includes form validation (title and content required)
+POSSIBLE: - Add storage.js
+    - Store JSON local storage data from saved posts
+- Update styles.css as needed
+
+Part 4: Implement View and Edit Post Functionality
+---------------------------------------------------------
+Branch: feature/view-edit-post
+
+- Add post.html
+    - Displays blog post details
+- Add view-edit-post.js
+    - Loads post data based on post ID from the URL
+    - Add Edit button to modify post’s title and content
+    - Save changes to local storage
+- Update styles.css as needed
+
+Part 5: Implement Delete Functionality and Final Touches
+---------------------------------------------------------------------
+Branch: feature/delete-post
+
+- Update post.html
+    - Add Delete button
+- Update view-edit-post.js
+    - Implement delete functionality (removes post from local storage)
+
+- Test application:
+    - Homepage correctly lists posts
+    - New post page adds posts to local storage
+    - Posts can be viewed, edited, and deleted
+
+Bonus: Add Responsive Styling
+------------------------------------------
+Branch: feature/styling
+
+- Update styles.css
+    - Add responsive styles for mobile, tablet, and desktop screens
