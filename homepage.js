@@ -25,7 +25,7 @@ if (savedPosts) {
   // THis loops through the posts to make each title a seperate list item
   displayPosts.forEach(post => {
     const li = document.createElement('li');
-    li.textContent = post.title;
+    li.textContent = post.title; // Only show the title
     blogsList.appendChild(li);
   });
 }

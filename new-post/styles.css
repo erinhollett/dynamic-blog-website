@@ -1,0 +1,74 @@
+:root {
+  --main-font: "Nunito", sans-serif;
+  --text-color: #222f5b;
+}
+
+h1 {
+  font-family: var(--main-font);
+  font-weight: 800;
+}
+
+body {
+  background: #e3f2fd;
+  color: var(--text-color);
+  font-family: var(--main-font);
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  background: #ffffffcc;
+  border: 2px solid #90caf9;
+  border-radius: 12px;
+  padding: 32px 32px 24px 32px;
+  box-shadow: 0 2px 8px #b3e5fc33;
+  min-width: 340px;
+  max-width: 400px;
+}
+
+label {
+  font-weight: bold;
+  color: #1976d2;
+  margin-top: 14px;
+  display: block;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px 8px;
+  margin-bottom: 16px;
+  border: 1.5px dashed #64b5f6;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #e3f2fd;
+  color: var(--text-color);
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* Content Box */
+textarea {
+  min-height: 140px; /* Taller by default */
+  resize: vertical; /* Only expands vertically */
+}
+
+button[type="submit"] {
+  background: #ea5548;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 17px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px #b3e5fc55;
+}
+
+button[type="submit"]:hover {
+  background: #d13328;
+}
