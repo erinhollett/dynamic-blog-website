@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make a Post</title>
+</head>
+<body>
+  <p>Create and submit your blog post:</p>
+
+  <form id="blogForm">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" maxlength="80" required><br>
+
+    <label for="content">Blog Content:</label><br>
+    <textarea id="content" name="content" required></textarea><br>
+    <label for="image">Image Link:</label><br>
+    <input type="text" id="image" name="image"><br>
+
+    <br>
+    <button type="submit">Post</button>
+  </form>
+
+  <script src="new-post.js"></script>
+</body>
+</html>
