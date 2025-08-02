@@ -19,15 +19,18 @@ window.addEventListener('DOMContentLoaded', function() {
         image: image,
         date: Date.now(),
         id: Date.now().toString(),
-    };
+      };
 
-    // == LOCAL STORAGE == //
+      // == LOCAL STORAGE == //
 
-    // retrieve current array of postData from localStorage
-    // it parses through the JSON first to turn it from a string to an array
-    let posts = JSON.parse(localStorage.getItem('myPosts')) || []; // start a new array if nothing is saved
-    posts.push(postData);  // push the new postData to the localStorage array
-    localStorage.setItem('myPosts', JSON.stringify(posts)); // save updated to local storage again (as a JSON string)
+      // retrieve current array of postData from localStorage
+      // it parses through the JSON first to turn it from a string to an array
+      let posts = JSON.parse(localStorage.getItem('myPosts'));
+      if (!posts) {
+        posts = [];
+      }
+      posts.push(postData);  // push the new postData to the localStorage array
+      localStorage.setItem('myPosts', JSON.stringify(posts)); // save updated to local storage again (as a JSON string)
     }
   });
 });
