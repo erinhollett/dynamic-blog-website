@@ -8,7 +8,7 @@ document.getElementById('delete').onclick = (ev) => {
   const postId = window.location.search.split('=')[1];
   console.log(deletePost.toString())
   deletePost(postId);
-  window.location = '/';
+  window.location = '../';
 };
 
 let allPosts = JSON.parse(localStorage.getItem('myPosts'));
