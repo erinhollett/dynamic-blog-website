@@ -27,7 +27,7 @@ for (const post of allPosts) {
 
 if (typeof(Storage) !== "undefined") {
   postTitle.innerHTML = postData.title;
-  postContent.innerHTML = postData.content;
+  postContent.innerHTML = postData.content.split('\n').join('<br>');
   if (postData.image && postData.image !== "") {
     postImage.src = postData.image;
   }
