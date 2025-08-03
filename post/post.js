@@ -28,7 +28,7 @@ for (const post of allPosts) {
 if (typeof(Storage) !== "undefined") {
   postTitle.innerHTML = postData.title;
   postContent.innerHTML = postData.content;
-  postImage.innerHTML = postData.image;
+  postImage.src = postData.image;
 } else {
   alert("Could not retrieve storage");
 }
