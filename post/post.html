@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>View post</title>
+  <link rel="stylesheet" href="../new-post/styles.css">
 </head>
 <body>
   <div id="blogPost">
@@ -11,6 +12,8 @@
     <p id="content"></p>
     <img id="image">
   </div>
+
+  <button id="edit" onclick="window.location.href=`../new-post/new-post.html${window.location.search}`;">Edit Post</button>
 
   <script src="post.js"></script>
 </body>
