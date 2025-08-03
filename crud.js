@@ -11,7 +11,7 @@ function getAllPosts() {
 function getPost(postId) {
   for (const post of getAllPosts()) {
     console.log(post.id)
-    if (post.id === postId) {
+    if (String(post.id) === String(postId)) {
       return post;
     }
   }
@@ -32,4 +32,17 @@ function savePost(postObj) {
   allPosts.push(postObj);
 
   localStorage.setItem(MY_POST_KEY, JSON.stringify(allPosts));
+}
+
+function deletePost(postId) {
+  let allPosts = getAllPosts();
+  let newPosts = [];
+
+  for (let i = 0; i < allPosts.length; i++) {
+    if (String(allPosts[i].id) !== String(postId)) {
+      newPosts.push(allPosts[i]);
+    }
+  }
+
+  localStorage.setItem(MY_POST_KEY, JSON.stringify(newPosts));
 }
